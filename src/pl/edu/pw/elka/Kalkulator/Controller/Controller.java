@@ -1,10 +1,5 @@
 package pl.edu.pw.elka.Kalkulator.Controller;
 
-import java.util.AbstractMap;
-import java.util.HashMap;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
-
 import pl.edu.pw.elka.Kalkulator.AppActionQueue.*;
 import pl.edu.pw.elka.Kalkulator.Model.*;
 import pl.edu.pw.elka.Kalkulator.View.*;
