@@ -12,8 +12,11 @@ import pl.edu.pw.elka.Kalkulator.Controller.*;
 
 public class View
 {
-    public View(final AppActionQueue queue)
+    private final AppActionQueue polecenia;//polecenia do view
+    private final AppActionQueue zdarzenia;//zdarzenia z view
+    public View(final AppActionQueue polecenia, final AppActionQueue zdarzenia)
     {
-	
+	this.polecenia=polecenia;
+	this.zdarzenia=zdarzenia;
     }
 }
