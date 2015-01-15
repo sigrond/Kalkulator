@@ -1,10 +1,13 @@
+/**
+ * 
+ */
 package pl.edu.pw.elka.Kalkulator.AppActionQueue;
 
 /**
  * @author x
  *
  */
-public abstract class AppAction
+public class CloseAppAction extends AppAction
 {
 
 }
