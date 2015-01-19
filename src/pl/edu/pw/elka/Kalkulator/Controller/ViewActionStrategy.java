@@ -1,33 +1,34 @@
-/**
- * 
- */
 package pl.edu.pw.elka.Kalkulator.Controller;
 
-import pl.edu.pw.elka.Kalkulator.AppActionQueue.ActionFromView;
-import pl.edu.pw.elka.Kalkulator.AppActionQueue.AppAction;
+import pl.edu.pw.elka.Kalkulator.AppEventQueue.AppEvent;
+import pl.edu.pw.elka.Kalkulator.AppEventQueue.EventFromView;
 
 /**
- * @author x
- *
+ * @author Tomasz Jakubczyk
+ *         zwyk³e zdarzenie z widoku. ma byæ obs³u¿one zgodnie z modelem
  */
 public class ViewActionStrategy extends Strategy
 {
 
-    /**
-     * @param controller
-     */
-    public ViewActionStrategy(final Controller controller)
-    {
-	super(controller);
-    }
+	/**
+	 * @param controller
+	 *            konstruktor wywo³uje konstruktor rodzica
+	 */
+	public ViewActionStrategy(final Controller controller)
+	{
+		super(controller);
+	}
 
-    /* (non-Javadoc)
-     * @see pl.edu.pw.elka.Kalkulator.Controller.Strategy#doAction(pl.edu.pw.elka.Kalkulator.AppActionQueue.AppAction)
-     */
-    @Override
-    void doAction(final AppAction appAction)
-    {
-	controller.executeAction((ActionFromView) appAction);
-    }
-    
+	/*
+	 * (non-Javadoc)
+	 * @see
+	 * pl.edu.pw.elka.Kalkulator.Controller.Strategy#doAction(pl.edu.pw.elka
+	 * .Kalkulator.AppEventQueue.AppEvent)
+	 */
+	@Override
+	void doAction(final AppEvent appEvent)
+	{
+		controller.executeAction((EventFromView) appEvent);
+	}
+
 }
